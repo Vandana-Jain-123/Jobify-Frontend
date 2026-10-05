@@ -6,6 +6,7 @@ function App() {
 
   return (
   <>
+  <h1>Jobify Project</h1>
   </>
   )
 }
