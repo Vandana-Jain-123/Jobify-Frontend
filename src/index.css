@@ -1,0 +1,131 @@
+.registerButton{
+  background-color: aquamarine;
+}
+/* =========================
+   COMMON COLORS
+========================= */
+
+:root {
+  --primary: #97A97C;
+  --primary-dark: #7F9166;
+
+  --secondary: #354230;
+
+  --background: #F7F9F4;
+  --white: #FFFFFF;
+
+  --text: #263020;
+  --text-light: #6B7564;
+
+  --border: #DCE3D4;
+}
+
+
+/* =========================
+   COMMON PAGE
+========================= */
+
+.common-page {
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+  
+}
+
+
+/* =========================
+   COMMON FORM
+========================= */
+
+.common-form {
+  width: 350px;
+  padding: 30px;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+
+/* =========================
+   COMMON LABEL
+========================= */
+
+.common-form label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+
+/* =========================
+   COMMON INPUT
+========================= */
+
+.common-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+
+  border: 1px solid var(--border);
+  border-radius: 6px;
+
+  color: var(--text);
+  background-color: var(--white);
+}
+
+
+/* Input focus */
+
+.common-form input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+
+/* =========================
+   COMMON BUTTON
+========================= */
+
+.common-btn {
+  width: 100%;
+  padding: 11px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: var(--primary);
+  color: var(--white);
+
+  font-size: 16px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+
+/* Button hover */
+
+.common-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+
+/* =========================
+   COMMON HEADING
+========================= */
+
+.common-heading {
+  color: var(--secondary);
+  margin-bottom: 20px;
+}
+
+
+/* =========================
+   COMMON TEXT
+========================= */
+
+.common-text {
+  color: var(--text-light);
+}
