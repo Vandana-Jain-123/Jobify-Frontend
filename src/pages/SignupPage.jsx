@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
+import { baseURL } from "../api/baseURL";
 const SignupPage = () => {
   const [signupData, setSignupData] = useState({
     fullName: "",
@@ -29,7 +30,7 @@ const SignupPage = () => {
   const handleCreateSignupData = async () => {
     try {
       const result = await axios.post(
-        `http://localhost:4000/createSignup`,
+        `${baseURL}/createSignup`,
         signupData,
       );
       console.log(result, "*********************");

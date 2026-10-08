@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import { baseURL } from "../api/baseURL";
 const LoginPage = () => {
   const [loginData, setLoginData] = useState({
     email: "",
@@ -10,10 +11,9 @@ const LoginPage = () => {
     try {
       console.log("LOGIN DATA:", loginData);
       const result = await axios.post(
-        `http://localhost:4000/checkLogin/checkLogin`,
+        `${baseURL}/checkLogin/checkLogin`,
         loginData,
       );
-      console.log(result, "555555555555555555555");
       console.log("message:", result.data.message);
     } catch (error) {
       console.log("status", error.response.status);
